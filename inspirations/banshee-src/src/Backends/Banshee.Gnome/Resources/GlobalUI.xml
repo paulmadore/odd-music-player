@@ -1,0 +1,16 @@
+<ui>
+    <menubar name="MainMenu" action="MainMenuAction">
+        <menu name="EditMenu" action="EditMenuAction">
+            <menu name="SelectedTracks" action="SelectedTracksAction">
+                <placeholder name="BelowAddToPlaylist">
+                    <menuitem name="BurnDisc" action="BurnDiscAction"></menuitem>
+                </placeholder>
+            </menu>
+        </menu>
+    </menubar>
+    <popup name="TrackContextMenu" action="TrackContextMenuAction">
+        <placeholder name="BelowAddToPlaylist">
+            <menuitem name="BurnDisc" action="BurnDiscAction"></menuitem>
+        </placeholder>
+    </popup>
+</ui>

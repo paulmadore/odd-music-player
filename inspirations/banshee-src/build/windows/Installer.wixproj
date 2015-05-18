@@ -1,0 +1,49 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Platform>x86</Platform>
+    <ProductVersion>3.0</ProductVersion>
+    <ProjectGuid>{33f58ffc-956e-4079-b27a-160a57ffea7a}</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputName>Banshee-2.6.0</OutputName>
+    <OutputType>Package</OutputType>
+    <ApplicationIcon>Bitmaps\banshee.ico</ApplicationIcon>
+    <OutputPath>.</OutputPath>
+    <IntermediateOutputPath>obj\</IntermediateOutputPath>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="InstallerDefinition.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\generated_bin.wxi" />
+    <None Include="obj\generated_etc.wxi" />
+    <None Include="obj\generated_lib.wxi" />
+    <None Include="obj\generated_share.wxi" />
+  </ItemGroup>
+  <ItemGroup>
+    <WixExtension Include="WixNetFxExtension">
+      <HintPath>$(WixExtDir)\WixNetFxExtension.dll</HintPath>
+    </WixExtension>
+    <WixExtension Include="WixUIExtension">
+      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
+    </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bitmaps\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bitmaps\bannrbmp.jpg" />
+    <Content Include="Bitmaps\dlgbmp.jpg" />
+    <Content Include="Bitmaps\banshee.ico" />
+    <Content Include="license.rtf" />
+  </ItemGroup>
+  <Import Project="$(WixTargetsPath)" />
+  <!--
+	To modify your build process, add your task inside one of the targets below and uncomment it.
+	Other similar extension points exist, see Wix.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

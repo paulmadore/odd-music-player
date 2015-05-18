@@ -1,0 +1,43 @@
+To make a release:
+
+Pre-release:
+* If it's a stable release, check this first:
+https://wiki.gnome.org/Apps/Banshee/StableReleasesPolicy
+* Update src/Core/Banshee.Core/Resources/contributors.xml
+  + This needs to be done manually, but there's a handy command
+    that can help you a lot:
+  `git log 2.9.0..HEAD --no-merges "$@" | grep ^Author: | sed 's/ <.*//; s/^Author: //' | sort | uniq -c | sort -nr`
+  (if the previous release was 2.9.0)
+* Update AUTHORS (cd extras/ && ./create-authors > ../AUTHORS)
+* Update NEWS
+* Update copyright years if needed, in the following paths:
+  + src/Core/Banshee.ThickClient/Banshee.Gui.Dialogs/AboutDialog.cs
+  + src/AssemblyInfo.cs.in
+  + COPYING
+* Check version in configure.ac (don't forget the display version)
+* Update banshee.doap, build/windows/Installer*
+* Run `make distcheck`
+* Commit everything
+
+Release:
+* Specifying your gnome username with the env var GNOME_FTP_USER,
+  run this script: `./extras/make-release`
+  + Note that this makes the tag, adds the version to bugzilla,
+    and uploads the tarballs. You will be asked to ssh to
+    master.gnome.org to install the tarballs on ftp.gnome.org.
+
+Post-release:
+* In the master.gnome.org session, do:
+  `cp release-data/banshee-<full_version>.news /ftp/pub/gnome/sources/banshee/<two_digit_version>/ && signal-ftp-sync`
+* Update the website (http://banshee.fm/wp-admin/)
+  + Add download/archives/$version page
+    - Use `cd extras && ./create-release-notes > foo` script
+      + By hand modify 'the previous major release notes...' section
+    - Set sort order (negative file of full version, i.e.: -290), parent (Archives), and permalink (i.e.: http://banshee.fm/download/archives/2-9-0/)
+  + Update Downloads/Archives page, adding entry for this release
+  + Add a new blog post, uncategorized, tag 'news'
+* For stable releases, ssh banshee@banshee.fm, update web/download.banshee.fm/release-info/banshee
+  + This is used by the website to know what the latest release is
+* Send announce e-mail
+  + To: banshee-list@gnome.org, gnome-announce-list@gnome.org, mono-announce-list@lists.ximian.com
+* Bump version in configure.ac (don't forget the display version) and commit.

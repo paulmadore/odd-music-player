@@ -1,0 +1,175 @@
+#!/usr/bin/env bash
+
+function preparing_to () {
+	for ((i=10; i > 0; i--)); do
+		printf "\rPreparing to %s in %d ... " "$1" $i
+		sleep 1
+	done
+	printf "\rRunning %s ...                        \n\n" "$1"
+}
+
+function bail () {
+	echo "Error: $@" 1>&2
+	exit 1
+}
+
+PACKAGE_INFO=$(./configure -V | head -n1)
+PACKAGE_NAME=$(echo "$PACKAGE_INFO" | cut -f1 -d' ')
+PACKAGE_VERSION=$(echo "$PACKAGE_INFO" | cut -f3 -d' ')
+TAG_NAME="${PACKAGE_VERSION}"
+
+RELEASE_RC_FILE="release-rc"
+. "$RELEASE_RC_FILE" 2>/dev/null \
+	|| bail "Could not load release RC file: '$RELEASE_RC_FILE'"
+
+[[ -z "${PACKAGE_NAME}" || -z "${PACKAGE_VERSION}" ]] \
+	&& bail "Could not figure out package information. Do you have a configure?"
+
+case "$(uname)" in
+    FreeBSD)
+        MAKE=gmake
+        SHA256="shasum -a 256"
+        ;;
+	Darwin)
+		MAKE=make
+		SHA256="shasum -a 256"
+		;;
+    *)
+        MAKE=make
+        SHA256=sha256sum
+        ;;
+esac
+
+cat <<EOF
+Release Summary
+
+  Package: ${PACKAGE_NAME}
+  Version: ${PACKAGE_VERSION}
+
+  Release Upload:
+    User:  ${WEB_USER}
+    Host:  ${WEB_HOST}
+    DOAP:  ${WEB_DOAP_PATH}
+
+  git tag: ${TAG_NAME}
+
+  OS X Build Configuration:
+EOF
+
+if [[ -z $OSX_USER ]]; then
+	echo "    Disabled"
+else
+cat <<EOF
+    User:  ${OSX_USER}
+    Host:  ${OSX_HOST}
+    Path:  ${OSX_BUILD_DIR}
+    git:   ${OSX_GIT}
+EOF
+fi
+
+echo
+read -p "Press enter if the configuration is correct..."
+echo
+
+function hook_defined () {
+	type $1 2>/dev/null | grep -q function
+}
+
+function run_hook () {
+	hook_defined $1 && $1
+}
+
+function distcheck () {
+	preparing_to "make distcheck"
+	$MAKE distcheck || bail "distcheck failed"
+}
+
+function prepare_upload () {
+	preparing_to "create upload data"
+
+	rm -rf release-data
+	mkdir release-data || bail "Could not create release directory"
+
+	find . -maxdepth 1 \( \
+		-name \*.bz2 -o \
+		-name \*.dmg \
+		\) -exec cp -a {} release-data \;
+
+	cp -a NEWS release-data/${PACKAGE_NAME}-${PACKAGE_VERSION}.news \
+		|| bail "Could not copy NEWS file"
+
+	(cd release-data && {
+		$SHA256 * > ${PACKAGE_NAME}-${PACKAGE_VERSION}.sha256sum \
+			|| bail "Could not sha256sum the release files"
+	}) || exit 1
+}
+
+function upload_release () {
+	preparing_to "upload release files"
+
+	scp -r release-data ${WEB_USER}@${WEB_HOST}: \
+		|| bail "Uploading release failed"
+
+	[[ -z "${WEB_DOAP_PATH}" ]] || {
+		scp *.doap ${WEB_USER}@${WEB_HOST}:${WEB_DOAP_PATH} \
+			|| bail "Could not upload DOAP file"
+	}
+
+#	( ssh ${WEB_USER}@${WEB_HOST} ftpadmin install \
+#		release-data/${PACKAGE_NAME}-${PACKAGE_VERSION}.tar.bz2) \
+#		|| bail "Could not install the tarball"
+	echo "Connect by ssh to gnomeuserid@master.gnome.org and then run this command to install the tarballs to ftp.gnome.org :"
+	echo "  ftpadmin install release-data/${PACKAGE_NAME}-${PACKAGE_VERSION}.tar.bz2"
+
+	read -p "Press enter when the tarballs are installed..."
+
+	rm -rf release-data
+}
+
+function tag_release () {
+	preparing_to "tag release as '${TAG_NAME}'"
+	git tag -a -m "${PACKAGE_VERSION} release" \
+		${TAG_NAME} || bail "Could not create tag"
+	git push origin ${TAG_NAME} || bail "Failed to push tag to remote"
+}
+
+function post_release () {
+	# This is supposed to be done by ftpadmin on master.gnome.org
+	# But apparently it is not the case
+	xdg-open "http://bugzilla.gnome.org/editversions.cgi?action=new&product=banshee&version=${PACKAGE_VERSION}"
+}
+
+# Build the OS X binary
+function osx_run_remote () {
+	ssh ${OSX_USER}@${OSX_HOST} "cd ${OSX_BUILD_DIR}; $@"
+}
+
+function osx_build_dmg () {
+	osx_run_remote ${OSX_GIT} pull \
+		|| bail "Could not update git clone"
+
+	scp ${PACKAGE_NAME}-${PACKAGE_VERSION}.tar.bz2 \
+		${OSX_USER}@${OSX_HOST}:${OSX_BUILD_DIR} \
+		|| bail "Could not transfer tarball to OS X build machine"
+
+	osx_run_remote ./release.sh ${PACKAGE_VERSION} \
+		|| bail "OS X build failed"
+	
+	scp ${OSX_USER}@${OSX_HOST}:${OSX_BUILD_DIR}/${PACKAGE_NAME}-${PACKAGE_VERSION}\*.dmg . \
+		|| bail "Could not fetch DMG image from OS X build machine"
+}
+
+distcheck
+if [[ -z $OSX_USER ]]; then
+    echo "Skipping OS X build"
+else
+    osx_build_dmg
+fi
+prepare_upload
+upload_release
+tag_release
+post_release
+
+echo
+echo "Congratulations, you have released ${PACKAGE_VERSION}!"
+echo

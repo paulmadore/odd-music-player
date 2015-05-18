@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+profiles=(
+	"darwin
+		--disable-mtp
+		--disable-appledevice
+		--disable-ipod
+		--disable-daap
+		--disable-boo
+		--disable-gnome
+		--disable-webkit
+		--disable-youtube
+		--disable-docs
+		--disable-gio-hardware
+		--disable-gio
+	"
+)
+
+selected_profile=$1; shift
+
+for ((i=0; i<${#profiles[@]}; i++)); do
+	profile=(${profiles[$i]})
+	if [ "${profile[0]}" = "$selected_profile" ]; then
+		configure="./configure"
+		for ((j=1; j<${#profile[@]}; j++)); do
+			configure="$configure ${profile[$j]}"
+		done
+		if [ -d .git ]; then
+			configure="$configure"
+		fi
+		echo "Running $configure $@"
+		$configure $@
+		exit $?
+	fi
+done
+
+echo "Usage: $0 <profile> [extra configure args]"
+echo
+echo "  Available profiles:"
+echo
+for ((i=0; i<${#profiles[@]}; i++)); do
+	profile=(${profiles[$i]})
+	echo "    ${profile[0]}"
+done
+echo
+exit 1

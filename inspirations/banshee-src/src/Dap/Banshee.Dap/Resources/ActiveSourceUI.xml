@@ -1,0 +1,9 @@
+<ui>
+  <toolbar name="HeaderToolbar">
+    <placeholder name="SourceActions">
+      <toolitem action="ClaimDapAction"/>
+      <toolitem action="UnmapSourceAction"/>
+      <toolitem action="SyncDapAction"/>
+    </placeholder>
+  </toolbar>
+</ui>

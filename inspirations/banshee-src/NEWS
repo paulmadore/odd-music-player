@@ -1,0 +1,149 @@
+===============================================================================
+Banshee 2.9.1 - 2014-03-18
+===============================================================================
+
+    Banshee 2.9.1 is the culmination of five months' work by 17 developers,
+    21 translators and dozens of bug reporters and testers. It is a development
+    release, the second of the 2.9.x releases leading up to our future stable
+    release Banshee 3.0.
+
+    New Features:
+
+      * GStreamer 1.x compatibility
+
+            This is the first official upstream release compatible with versions of
+            GStreamer 1.0 or newer.
+
+      * Production-ready GStreamerSharp playback-engine backend, now default
+
+            Our managed backend (that already allowed us to have playback working
+            in the Windows platform) has been migrated to work with the revamped
+            GStreamerSharp bindings (GObject-Introspection based, and capable of
+            binding GStreamer 1.0 or newer) and is now the default one for all
+            platforms.
+
+            This paves the way to finish the long-standing goal of completely
+            removing lower-level languages like C from our codebase, to lower
+            the barrier of entry to new contributors, reduce complexity and
+            increase stability.
+
+            You can still use the optional unmanaged GStreamer backend, but
+            before doing so we encourage you to provide us any feedback that
+            you may have about the managed one (reporting bugs or writing to
+            our forums or mailing lists), because we will deprecate this one
+            very soon.
+
+      * New "MediaPanel" UI, formerly called "MeeGo MediaPanel"
+
+            The MeeGo specific UI has been now been renamed to MediaPanel and
+            you can use it in your desktop environment now, just by clicking
+            in the Media Panel option under the View menu (this extension is
+            now enabled by default).
+
+
+    Enhancements:
+
+      * Notifications: use notify-sharp-3.0 in the system if available
+      * bgo#690010: enable tests by default if NUnit dependency is found
+      * WebBrowser: drop dependency on 'libsoup-gnome', which was deprecated
+      * Video: default smart playlists are now invisible when empty, like Music ones
+
+
+    Notable Bugs Fixed (35 fixed since 2.9.0):
+
+      * bgo#692374: require dbus-glib-1 to make sure to avoid GConf crashes
+      * bgo#725870: avoid hang when disconnecting Nexus 5
+      * bgo#724635: don't crash at iPod sync
+      * bgo#726336: avoid redundancy in submenu label text
+      * bgo#725185: avoid importing non-readable files
+      * bgo#696520: avoid pointless long->int runtime casts
+      * DBus: don't try to connect in GrabDefaultName() if dbus is disabled
+      * bgo#724730: avoid aborting MTP access when busy
+      * bgo#724678: tracks which were in nested folders under Music/ not shown
+      * bgo#724656: fix potential crashers when ejecting DAP source
+      * bgo#724645: fix crash at shutdown if MTP was mounted
+      * bgo#627391: [gapless] fix smooth transition for Repeat-Single mode
+      * bgo#671221: fix Repeat-All mode if there are less than 3 tracks and Shuffle is ON
+      * bgo#724515: fix Repeat-OFF mode when Shuffle is ON
+      * bgo#723889: avoid notifications-related warning printed in the log
+      * bgo#723040: DapService: avoid freezing Banshee when unmapping device
+      * bgo#679938: [gapless] Repeat always on
+      * bgo#674293: [gapless] Banshee ignores "stop when finished"
+      * bgo#621222: [gapless] Playcount shouldn't be incremented as soon as song plays
+      * bgo#723005: fix path of image referenced in Help
+      * bgo#722731: avoid highlighting wrong track after invalid track was played
+      * bgo#636992: avoid misleading [gapless] token in log
+      * bgo#722565: advice about nunit-console not available instead of failing
+      * bgo#720359: avoid 'URI too large' errors at LastFM scrobbling
+      * bgo#722947: prevent a crash when dealing with Nexus4
+      * bgo#722209: avoid crash when connecting Nexus4
+      * bgo#722219: avoid crash when disconnecting Nexus4
+      * bgo#664887: fail faster if --enable-tests used and NUnit was not found
+      * bgo#721203: CD audio source doesn't show up when inserting it
+      * bgo#712656: pkg-config files were still pointing to GTK2 instead of GTK3
+      * bgo#710266: PlayQueue: fix another GtkCRITICAL at shutdown
+      * bgo#710423: Fix build of the SoundMenu extension
+      * bgo#710475: fix build in Osx by avoiding optional parameters
+      * bgo#710266: avoid GtkCRITICAL in the console at shutdown
+      * bgo#709717: fix ListView scrolling with mouse wheel (regression from GTK2)
+
+
+===============================================================================
+SOURCES / PACKAGES
+===============================================================================
+
+Sources
+-------
+
+    * Banshee 2.9.1 Tarballs:
+      http://ftp.gnome.org/pub/GNOME/sources/banshee/2.9/banshee-2.9.1.tar.xz
+      http://ftp.gnome.org/pub/GNOME/sources/banshee/2.9/banshee-2.9.1.sha256sum
+
+Packages
+--------
+
+    Download and installation information is available here:
+
+    * http://banshee.fm/download/
+
+    Binaries:
+
+        Linux  http://ftp.gnome.org/pub/GNOME/binaries/linux/banshee/
+      Windows  http://ftp.gnome.org/pub/GNOME/binaries/win32/banshee/
+         OS X  http://ftp.gnome.org/pub/GNOME/binaries/mac/banshee/
+
+===============================================================================
+REPORT BUGS - HELP THE PROJECT - GROW THE COMMUNITY
+===============================================================================
+
+    If you encounter any bad behavior with this release, please do not
+    hesitate to file bugs!
+
+    * http://banshee.fm/contribute/file-bugs
+    * http://bugzilla.gnome.org/enter_bug.cgi?product=banshee&version=2.9.1
+
+
+===============================================================================
+VALUED BANSHEE CONTRIBUTORS
+===============================================================================
+
+Contributors For This Release
+-----------------------------
+
+    The following people directly contributed to the release of this version
+    of Banshee. Without their help, there would be no release!
+
+     Andres G. Aragoneses, Andrey Gankov, Bertrand Lorentz, Chow Loong Jin,
+     Dmitriy Petukhov, Frank Ziegler, Marcin Kolny, Michael Catanzaro,
+     Michael Foster, Michał Sawicz, Mirco Bauer, Nicholas Little, Olivier
+     Dufour, Phil Trimble, Roderich Schupp Sebastian Dröge, Stephan
+     Sundermann
+
+    The following people contributed updated translations to this release.
+    Without them, our project's reach would be much more limited.
+
+     Andika Triwidada, Antonio Fernandes C. Neto, Aurimas Černius, Benjamin
+     Steinwender, Balázs Úr, Cheng-Chia Tseng, Daniel Mustieles, Dimitris
+     Spingos, Enrico Nicoletto, Fran Diéguez, Jordi Mas, Marek Černocký,
+     Martin Srebotnjak, Matej Urbančič, michaeljayt, Мирослав Николић,
+     Piotr Drąg, Rafael Ferreira, Ricardo Barbosa, Seong-ho Cho, Tiago S.

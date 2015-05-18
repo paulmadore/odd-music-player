@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <ProjectGuid>{6B781836-AB65-49EF-BECD-CCC193C5D589}</ProjectGuid>
+    <Compiler>
+      <Compiler ctype="GccCompiler" />
+    </Compiler>
+    <Language>C</Language>
+    <Target>Bin</Target>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin</OutputPath>
+    <DefineSymbols>DEBUG MONODEVELOP</DefineSymbols>
+    <CodeGeneration>
+      <CodeGeneration ctype="CCompilationParameters" />
+    </CodeGeneration>
+    <CompileTarget>SharedLibrary</CompileTarget>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="Build" command="make" workingdir="${SolutionDir}" />
+        <Command type="Execute" command="make run" workingdir="${SolutionDir}" />
+      </CustomCommands>
+    </CustomCommands>
+    <OutputName>libbanshee</OutputName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="banshee-ripper.c" />
+    <Compile Include="banshee-gst.c" />
+    <Compile Include="banshee-player.c" />
+    <Compile Include="banshee-transcoder.c" />
+    <Compile Include="banshee-player-cdda.c" />
+    <Compile Include="banshee-player-missing-elements.c" />
+    <Compile Include="banshee-player-video.c" />
+    <Compile Include="banshee-player-equalizer.c" />
+    <Compile Include="banshee-player-pipeline.c" />
+    <Compile Include="banshee-tagger.c" />
+    <Compile Include="banshee-player-replaygain.c" />
+    <Compile Include="banshee-player-vis.c" />
+    <Compile Include="banshee-bpmdetector.c" />
+    <Compile Include="banshee-player-dvd.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="banshee-player-private.h" />
+    <None Include="banshee-player-cdda.h" />
+    <None Include="banshee-player-missing-elements.h" />
+    <None Include="banshee-player-video.h" />
+    <None Include="banshee-player-pipeline.h" />
+    <None Include="banshee-tagger.h" />
+    <None Include="banshee-gst.h" />
+    <None Include="banshee-player-equalizer.h" />
+    <None Include="banshee-player-replaygain.h" />
+    <None Include="banshee-player-vis.h" />
+    <None Include="banshee-player-dvd.h" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <MonoDevelop.Autotools.MakefileInfo IntegrationEnabled="true" RelativeMakefileName="Makefile.am">
+          <BuildFilesVar Sync="true" Name="libbanshee_la_SOURCES" />
+          <DeployFilesVar />
+          <ResourcesVar />
+          <OthersVar />
+          <GacRefVar />
+          <AsmRefVar />
+          <ProjectRefVar />
+          <MessageRegex Name="gcc" />
+        </MonoDevelop.Autotools.MakefileInfo>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

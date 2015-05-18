@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <ProjectGuid>{6B73E278-23FB-4A59-9B44-AB7F0212B936}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Banshee.Dap.MassStorage</AssemblyName>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ReleaseVersion>1.3</ReleaseVersion>
+    <RootNamespace>Banshee.Dap.MassStorage</RootNamespace>
+    <AssemblyOriginatorKeyFile>.</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Windows|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\bin</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Banshee.Core\Banshee.Core.csproj">
+      <Project>{2ADB831A-A050-47D0-B6B9-9C19D60233BB}</Project>
+      <Name>Banshee.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Banshee.Services\Banshee.Services.csproj">
+      <Project>{B28354F0-BA87-44E8-989F-B864A3C7C09F}</Project>
+      <Name>Banshee.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Banshee.Dap\Banshee.Dap.csproj">
+      <Project>{BC2E94DF-7A82-461E-BE7C-60E41ADC3562}</Project>
+      <Name>Banshee.Dap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\MusicBrainz\MusicBrainz.csproj">
+      <Project>{C5DD02DE-4F0E-4DC0-ABC7-035A8217CD50}</Project>
+      <Name>MusicBrainz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Banshee.ThickClient\Banshee.ThickClient.csproj">
+      <Project>{AC839523-7BDF-4AB6-8115-E17921B96EC6}</Project>
+      <Name>Banshee.ThickClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Hyena\Hyena.Data.Sqlite\Hyena.Data.Sqlite.csproj">
+      <Project>{95374549-9553-4C1E-9D89-667755F90E13}</Project>
+      <Name>Hyena.Data.Sqlite</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Hyena\Hyena\Hyena.csproj">
+      <Project>{95374549-9553-4C1E-9D89-667755F90E12}</Project>
+      <Name>Hyena</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banshee.Dap.MassStorage\MassStorageSource.cs" />
+    <Compile Include="Banshee.Dap.MassStorage\MassStorageDevice.cs" />
+    <Compile Include="Banshee.Dap.MassStorage\KeyValueParser.cs" />
+    <Compile Include="Banshee.Dap.MassStorage\AndroidDevice.cs" />
+    <Compile Include="Banshee.Dap.MassStorage\DeviceMapper.cs" />
+    <Compile Include="Banshee.Dap.MassStorage\CustomMassStorageDevice.cs" />
+    <Compile Include="Banshee.Dap.MassStorage\AmazonMp3GroupSource.cs" />
+    <Compile Include="Banshee.Dap.MassStorage\WebOSDevice.cs" />
+    <Compile Include="Banshee.Dap.MassStorage\MaemoDevice.cs" />
+    <Compile Include="Banshee.Dap.MassStorage\NookDevice.cs" />
+    <Compile Include="Banshee.Dap.MassStorage\RockBoxDevice.cs" />
+    <Compile Include="Banshee.Dap.MassStorage\SymbianDevice.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Banshee.Dap.MassStorage.addin.xml">
+      <LogicalName>Banshee.Dap.MassStorage.addin.xml</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <MonoDevelop.Autotools.MakefileInfo IntegrationEnabled="True" RelativeMakefileName="Makefile.am">
+          <BuildFilesVar Sync="True" Name="SOURCES" />
+          <DeployFilesVar />
+          <ResourcesVar Sync="True" Name="RESOURCES" />
+          <OthersVar />
+          <GacRefVar />
+          <AsmRefVar />
+          <ProjectRefVar />
+        </MonoDevelop.Autotools.MakefileInfo>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="glib-sharp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="gio-sharp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="gdk-sharp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="Mono.Posix">
+      <HintPath>..\..\..\bin\bin\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Addins">
+      <HintPath>..\..\..\bin\bin\Mono.Addins.dll</HintPath>
+      <Package>mono-addins</Package>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+</Project>
