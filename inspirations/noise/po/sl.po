@@ -1,0 +1,2140 @@
+# Slovenian translation for noise
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the noise package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: noise\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-03 12:13-0600\n"
+"PO-Revision-Date: 2015-01-22 17:29+0000\n"
+"Last-Translator: Jernej Virag <Unknown>\n"
+"Language-Team: Slovenian <sl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
+"X-Launchpad-Export-Date: 2015-04-01 05:25+0000\n"
+"X-Generator: Launchpad (build 17413)\n"
+"Language: sl\n"
+
+#. / Used for unknown titles, artists, or album names.
+#: ../core/Media.vala:34
+msgid "Unknown"
+msgstr "Neznano"
+
+#. / Please keep $NAME and $ALBUM, they will be replaced by their values
+#: ../core/Media.vala:177
+msgid "$NAME on $ALBUM"
+msgstr "$NAME iz $ALBUM"
+
+#. / Please keep $NAME and $ARTIST, they will be replaced by their values
+#: ../core/Media.vala:180
+msgid "$NAME by $ARTIST"
+msgstr "$NAME od $ARTIST"
+
+#. / Please keep $NAME, $ARTIST and $ALBUM, they will be replaced by their values
+#: ../core/Media.vala:186
+msgid "$NAME by $ARTIST on $ALBUM"
+msgstr "$NAME od $ARTIST iz $ALBUM"
+
+#: ../core/Resources.vala:97
+#: ../src/Dialogs/InstallGstreamerPluginsDialog.vala:70
+#: ../src/Dialogs/FileNotFoundDialog.vala:94
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: ../core/Resources.vala:98 ../src/Views/GridView/PopupListView.vala:260
+msgid "Open"
+msgstr "Odpri"
+
+#: ../core/Resources.vala:99
+msgid "Save"
+msgstr "Shrani"
+
+#: ../core/GStreamer/Equalizer.vala:76
+msgid "Flat"
+msgstr "Plosko"
+
+#: ../core/GStreamer/Equalizer.vala:77
+msgid "Classical"
+msgstr "Klasična"
+
+#: ../core/GStreamer/Equalizer.vala:78
+msgid "Club"
+msgstr "Klubska"
+
+#: ../core/GStreamer/Equalizer.vala:79
+msgid "Dance"
+msgstr "Plesna"
+
+#: ../core/GStreamer/Equalizer.vala:80
+msgid "Full Bass"
+msgstr "Polni basi"
+
+#: ../core/GStreamer/Equalizer.vala:81
+msgid "Full Treble"
+msgstr "Polni visoki toni"
+
+#: ../core/GStreamer/Equalizer.vala:82
+msgid "Full Bass + Treble"
+msgstr "Polni basi in visoki toni"
+
+#: ../core/GStreamer/Equalizer.vala:83
+msgid "Headphones"
+msgstr "Slušalke"
+
+#: ../core/GStreamer/Equalizer.vala:84
+msgid "Large Hall"
+msgstr "Velika dvorana"
+
+#: ../core/GStreamer/Equalizer.vala:85
+msgid "Live"
+msgstr "V živo"
+
+#: ../core/GStreamer/Equalizer.vala:86
+msgid "Party"
+msgstr "Zabava"
+
+#: ../core/GStreamer/Equalizer.vala:87
+msgid "Pop"
+msgstr "Pop"
+
+#: ../core/GStreamer/Equalizer.vala:88
+msgid "Reggae"
+msgstr "corruptcorruptcorruptcorruptcorruptcorrupt"
+
+#: ../core/GStreamer/Equalizer.vala:89
+msgid "Rock"
+msgstr "Rok"
+
+#: ../core/GStreamer/Equalizer.vala:90
+msgid "Soft"
+msgstr "Mehak"
+
+#: ../core/GStreamer/Equalizer.vala:91
+msgid "Ska"
+msgstr "Ska"
+
+#: ../core/GStreamer/Equalizer.vala:92
+msgid "Soft Rock"
+msgstr "Mehki rok"
+
+#: ../core/GStreamer/Equalizer.vala:93
+msgid "Techno"
+msgstr "Tehno"
+
+#: ../core/LibrariesManager.vala:140
+msgid "Importing <b>$NAME</b> by <b>$ARTIST</b> to library…"
+msgstr "Uvažanje <b>$NAME</b> od izvajalca <b>$ARTIST</b> v knjižnico…"
+
+#: ../core/Utils/TimeUtils.vala:44
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d sekund"
+msgstr[1] "%d sekunda"
+msgstr[2] "%d sekundi"
+msgstr[3] "%d sekunde"
+
+#: ../core/Utils/TimeUtils.vala:52 ../core/Utils/TimeUtils.vala:83
+msgid "%u minute"
+msgid_plural "%u minutes"
+msgstr[0] "%u minut"
+msgstr[1] "%u minuta"
+msgstr[2] "%u minuti"
+msgstr[3] "%u minute"
+
+#: ../core/Utils/TimeUtils.vala:56
+msgid "%u second"
+msgid_plural "%u seconds"
+msgstr[0] "%u sekund"
+msgstr[1] "%u sekunda"
+msgstr[2] "%u sekundi"
+msgstr[3] "%u sekunde"
+
+#. / Minutes and seconds
+#: ../core/Utils/TimeUtils.vala:58
+msgctxt "minutes and seconds"
+msgid "%s and %s"
+msgstr "%s in %s"
+
+#: ../core/Utils/TimeUtils.vala:77
+msgid "%u day"
+msgid_plural "%u days"
+msgstr[0] "%u dni"
+msgstr[1] "%u dan"
+msgstr[2] "%u dni"
+msgstr[3] "%u dni"
+
+#: ../core/Utils/TimeUtils.vala:80
+msgid "%u hour"
+msgid_plural "%u hours"
+msgstr[0] "%u ur"
+msgstr[1] "%u ura"
+msgstr[2] "%u uri"
+msgstr[3] "%u ure"
+
+#. / days, hours and minutes
+#: ../core/Utils/TimeUtils.vala:91
+msgctxt "days, hours and minutes"
+msgid "%s, %s and %s"
+msgstr "%s, %s in %s"
+
+#. / days and hours
+#: ../core/Utils/TimeUtils.vala:94
+msgctxt "days and hours"
+msgid "%s and %s"
+msgstr "%s in %s"
+
+#. / days and minutes
+#: ../core/Utils/TimeUtils.vala:99
+msgctxt "days and minutes"
+msgid "%s and %s"
+msgstr "%s in %s"
+
+#. / hours and minutes
+#: ../core/Utils/TimeUtils.vala:108
+msgctxt "hours and minutes"
+msgid "%s and %s"
+msgstr "%s in %s"
+
+#. / Format of date strings. See reference documentation of g_date_time_format()
+#. / for more details.
+#: ../core/Utils/TimeUtils.vala:167
+msgid "%m/%e/%Y %l:%M %p"
+msgstr "%e. %m. %Y %l:%M"
+
+#: ../core/Utils/PlaylistsUtils.vala:96
+msgid "%s (%d)"
+msgstr "%s (%d)"
+
+#: ../core/Utils/PlaylistsUtils.vala:235
+msgid "New playlist"
+msgstr "Nov seznam predvajanja"
+
+#: ../core/Utils/PlaylistsUtils.vala:246
+msgid "%s (%i)"
+msgstr "%s (%i)"
+
+#: ../core/Utils/PlaylistsUtils.vala:274
+msgid "Export Playlist"
+msgstr "Izvoz seznama predvajanja"
+
+#: ../core/Utils/PlaylistsUtils.vala:282 ../core/Utils/PlaylistsUtils.vala:377
+msgid "MPEG Version 3.0 Extended (*.m3u)"
+msgstr "MPEG razširjena različica 3.0 (*.m3u)"
+
+#: ../core/Utils/PlaylistsUtils.vala:287 ../core/Utils/PlaylistsUtils.vala:382
+msgid "Shoutcast Playlist Version 2.0 (*.pls)"
+msgstr "Seznam predvajanja Shoutcast različica 2.0 (*.pls)"
+
+#: ../core/Utils/PlaylistsUtils.vala:362
+msgid "Playlist"
+msgstr "Seznam predvajanja"
+
+#: ../core/Utils/PlaylistsUtils.vala:368
+msgid "Import %s"
+msgstr "Uvozi %s"
+
+#: ../core/Utils/PlaylistsUtils.vala:402
+msgid "Unrecognized playlist file. Import failed."
+msgstr "Neprepoznana datoteka seznama predvajanja. Uvoz je spodletel."
+
+#: ../core/Utils/FileUtils.vala:280
+msgid " (%d)"
+msgstr " (%d)"
+
+#: ../src/Noise.vala:38
+msgid "Listen to music"
+msgstr "Poslušajte glasbo"
+
+#: ../src/Noise.vala:39
+msgid "Music Player"
+msgstr "Predvajalnik glasbe"
+
+#: ../src/Noise.vala:40
+msgid "Noise;Audio;Player;MP3;iPod;Play;Playlist;Media;CD;Phone;Songs;"
+msgstr ""
+
+#: ../src/Noise.vala:41
+msgid "About Noise"
+msgstr "O Noise"
+
+#: ../src/Noise.vala:42
+msgid "About Music"
+msgstr "O Music"
+
+#: ../src/LibraryWindow.vala:250
+msgid "Import to Library…"
+msgstr "Uvozi v knjižnico ..."
+
+#: ../src/LibraryWindow.vala:253 ../src/Dialogs/PreferencesWindow.vala:82
+msgid "Preferences"
+msgstr "Možnosti"
+
+#: ../src/LibraryWindow.vala:270
+msgid "Previous"
+msgstr "Predhodna skladba"
+
+#: ../src/LibraryWindow.vala:272 ../src/LibraryWindow.vala:1054
+msgid "Play"
+msgstr "Predvajaj"
+
+#: ../src/LibraryWindow.vala:274
+msgid "Next"
+msgstr "Naslednja skladba"
+
+#: ../src/LibraryWindow.vala:279
+msgid "Search Music"
+msgstr "Iskanje glasbe"
+
+#: ../src/LibraryWindow.vala:687 ../src/LibraryWindow.vala:825
+#: ../src/Views/DeviceSummaryWidget.vala:107
+msgid "Music"
+msgstr "Glasba"
+
+#: ../src/LibraryWindow.vala:880 ../src/DataBase/DataBaseManager.vala:556
+#: ../src/LocalLibrary.vala:104 ../src/PlaybackManager.vala:99
+msgctxt "Name of the playlist"
+msgid "Queue"
+msgstr "Vrsta"
+
+#: ../src/LibraryWindow.vala:883
+msgid "No songs in Queue"
+msgstr "Ni pesmi v vrsti"
+
+#: ../src/LibraryWindow.vala:884
+msgid ""
+"To add songs to the queue, use the <b>secondary click</b> on an item and "
+"choose <b>Queue</b>. When a song finishes, the queued songs will be played "
+"first before the next song in the currently playing list."
+msgstr ""
+"Če želite dodati skladbe v vrsto, uporabite <b>drugotni klik</b> na predmetu "
+"in izberite <b>Vrsta</b>. Ko se skladba konča, bodo najprej predvajane "
+"skladbe v vrsti pred naslednjo skladbo na trenutno predvajanem seznamu."
+
+#: ../src/LibraryWindow.vala:890 ../src/DataBase/DataBaseManager.vala:556
+#: ../src/LocalLibrary.vala:104 ../src/PlaybackManager.vala:97
+msgid "History"
+msgstr "Zgodovina"
+
+#: ../src/LibraryWindow.vala:893
+msgid "No songs in History"
+msgstr "Ni pesmi v zgodovini"
+
+#: ../src/LibraryWindow.vala:894
+msgid ""
+"After a part of a song has been played, it is added to the history list.\n"
+"You can use this list to see all the songs you have played during the "
+"current session."
+msgstr ""
+"Po delnem predvajanju pesmi se ta doda v seznam zgodovine.\n"
+"Ta seznam lahko uporabite za pogled vseh predvajanih pesmi med trenutno sejo."
+
+#: ../src/LibraryWindow.vala:1048
+msgid "Pause"
+msgstr "Premor"
+
+#: ../src/LibraryWindow.vala:1134
+#: ../src/Views/Wrappers/MusicViewWrapper.vala:54
+msgid "Import Music"
+msgstr "Uvozi glasbo"
+
+#: ../src/LibraryWindow.vala:1154 ../src/LocalLibrary.vala:225
+msgid "<b>Importing</b> music to library…"
+msgstr "<b>Uvažanje</b> glasbe v knjižnico …"
+
+#: ../src/Dialogs/MediaEditor.vala:86
+msgid "Details"
+msgstr "Podrobnosti"
+
+#: ../src/Dialogs/MediaEditor.vala:88 ../src/Dialogs/MediaEditor.vala:372
+msgid "Lyrics"
+msgstr "Besedilo"
+
+#: ../src/Dialogs/MediaEditor.vala:97 ../src/Dialogs/PreferencesWindow.vala:96
+msgid "Close"
+msgstr "Zapri"
+
+#: ../src/Dialogs/MediaEditor.vala:182 ../src/Dialogs/MediaEditor.vala:346
+msgid "Editing $NAME by $ARTIST"
+msgstr "Urejanje $NAME od $ARTIST"
+
+#: ../src/Dialogs/MediaEditor.vala:184 ../src/Dialogs/MediaEditor.vala:348
+msgid "Editing %s"
+msgstr "Urejanje %s"
+
+#: ../src/Dialogs/MediaEditor.vala:187 ../src/Dialogs/MediaEditor.vala:351
+msgid "Editing %i songs"
+msgstr "Urejanje %i pesmi"
+
+#: ../src/Dialogs/MediaEditor.vala:193
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:121
+#: ../src/Dialogs/SmartPlaylistEditor.vala:275
+msgid "Title"
+msgstr "Naslov"
+
+#: ../src/Dialogs/MediaEditor.vala:194
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:122
+#: ../src/Dialogs/SmartPlaylistEditor.vala:262
+#: ../src/Widgets/StatusBar.vala:71
+msgid "Artist"
+msgstr "Izvajalec"
+
+#: ../src/Dialogs/MediaEditor.vala:195
+msgid "Album Artist"
+msgstr "Izvajalec albuma"
+
+#: ../src/Dialogs/MediaEditor.vala:196
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:123
+#: ../src/Dialogs/SmartPlaylistEditor.vala:261
+#: ../src/Widgets/StatusBar.vala:70
+msgid "Album"
+msgstr "Album"
+
+#: ../src/Dialogs/MediaEditor.vala:197 ../src/Dialogs/MediaEditor.vala:466
+#: ../src/Dialogs/SmartPlaylistEditor.vala:268
+msgid "Genre"
+msgstr "Zvrst"
+
+#: ../src/Dialogs/MediaEditor.vala:198
+#: ../src/Dialogs/SmartPlaylistEditor.vala:265
+msgid "Composer"
+msgstr "Skladatelj"
+
+#: ../src/Dialogs/MediaEditor.vala:199 ../src/Dialogs/MediaEditor.vala:466
+#: ../src/Dialogs/SmartPlaylistEditor.vala:269
+msgid "Grouping"
+msgstr "Združevanje"
+
+#: ../src/Dialogs/MediaEditor.vala:200
+#: ../src/Dialogs/SmartPlaylistEditor.vala:264
+msgid "Comment"
+msgstr "Komentar"
+
+#: ../src/Dialogs/MediaEditor.vala:201
+msgid "Track"
+msgstr "Sled"
+
+#: ../src/Dialogs/MediaEditor.vala:202
+msgid "Disc"
+msgstr "Plošča"
+
+#: ../src/Dialogs/MediaEditor.vala:203
+#: ../src/Dialogs/SmartPlaylistEditor.vala:276
+msgid "Year"
+msgstr "Leto"
+
+#: ../src/Dialogs/MediaEditor.vala:204
+#: ../src/Dialogs/SmartPlaylistEditor.vala:273
+msgid "Rating"
+msgstr "Ocena"
+
+#: ../src/Dialogs/MediaEditor.vala:294
+msgid "Lyrics not found for %s"
+msgstr "Besedila niso najdena  za %s"
+
+#: ../src/Dialogs/MediaEditor.vala:632
+msgid "Reset"
+msgstr "Ponastavi"
+
+#: ../src/Dialogs/MediaEditor.vala:636
+msgid "<b>Stats</b>"
+msgstr "<b>Statistika</b>"
+
+#: ../src/Dialogs/PreferencesWindow.vala:48
+msgid "Select Music Folder…"
+msgstr "Izberite mapo s skladbami ..."
+
+#: ../src/Dialogs/PreferencesWindow.vala:132
+msgid "General"
+msgstr "Splošno"
+
+#: ../src/Dialogs/PreferencesWindow.vala:138
+msgid "Music Folder Location:"
+msgstr "Mesto mape z glasbo:"
+
+#: ../src/Dialogs/PreferencesWindow.vala:146
+msgid "Library Management:"
+msgstr "Upravljanje knjižnice:"
+
+#: ../src/Dialogs/PreferencesWindow.vala:153
+msgid "Keep Music folder organized:"
+msgstr "Ohrani mapo z glasbo urejeno:"
+
+#: ../src/Dialogs/PreferencesWindow.vala:157
+msgid "Write metadata to file:"
+msgstr "Zapiši metapodatke v datoteko:"
+
+#: ../src/Dialogs/PreferencesWindow.vala:161
+msgid "Copy imported files to Library:"
+msgstr "Kopiraj uvožene datoteke v knjižnico:"
+
+#: ../src/Dialogs/PreferencesWindow.vala:163
+msgid "Desktop Integration:"
+msgstr "Podpora namizju:"
+
+#: ../src/Dialogs/PreferencesWindow.vala:169
+msgid "Notifications:"
+msgstr "Obvestila:"
+
+#: ../src/Dialogs/PreferencesWindow.vala:174
+msgid "Continue playback when closed:"
+msgstr "Nadaljuj s predvajanjem ko je okno zaprto:"
+
+#: ../src/Dialogs/InstallGstreamerPluginsDialog.vala:51
+msgid "Would you like to install the %s plugin?\n"
+msgstr "Ali želite namestiti dodatek %s?\n"
+
+#: ../src/Dialogs/InstallGstreamerPluginsDialog.vala:52
+msgid ""
+"\n"
+"This song cannot be played. The %s plugin is required to play the song."
+msgstr ""
+"\n"
+"Te skladbe ni mogoče igrati, potrebujete dodatek %s."
+
+#: ../src/Dialogs/InstallGstreamerPluginsDialog.vala:71
+msgid "Install Plugin"
+msgstr "Namesti vstavek"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:55
+msgid "Import from Device"
+msgstr "Uvozi iz naprave"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:72
+msgid "Import media from %s"
+msgstr "Uvozi predstavnost iz %s"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:73
+msgid ""
+"The following files were found on %s, but are not in your library. Check all "
+"the files you would like to import."
+msgstr ""
+"Naslednje datoteke so bile najdene na %s, toda niso v vaši knjižnici. "
+"Preverite vse datoteke, ki bi jih želeli uvoziti."
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:74
+msgid "Import all media"
+msgstr "Uvozi vso predstavnost"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:79
+#: ../plugins/Devices/CDRom/CDView.vala:90
+msgid "Import"
+msgstr "Uvozi"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:80
+msgid "Don't Import"
+msgstr "Ne uvozi"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:88
+msgid "Import %i items from %s"
+msgstr "Uvozi %i predmetov iz %s"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:92
+msgid "Import %s from %s"
+msgstr "Uvozi %s iz %s"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:120
+msgid "ID"
+msgstr "ID"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:172
+msgid "Select individual media to import:"
+msgstr "Izberi posamezno predstavnost za uvoz:"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:190
+msgid "Check Item"
+msgstr "Označi predmet"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:191
+msgid "Check Album"
+msgstr "Označi album"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:192
+msgid "Check Artist"
+msgstr "Označi izvajalca"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:289
+msgid "Cannot Import"
+msgstr "Ni mogoče uvoziti"
+
+#: ../src/Dialogs/TransferFromDeviceDialog.vala:289
+msgid ""
+"Noise is already doing file operations. Please wait until those finish to "
+"import from %d"
+msgstr ""
+"Noise že počne datotečna opravila. Počakajte, dokler ta ne končajo z "
+"uvažanjem iz %d"
+
+#: ../src/Dialogs/FileNotFoundDialog.vala:60
+msgid "File not found"
+msgstr "Datoteke ni mogoče najti"
+
+#: ../src/Dialogs/FileNotFoundDialog.vala:66
+msgid "The music file for <b>%s</b> by <b>%s</b> could not be found."
+msgstr "Glasbena datoteka za <b>%s</b> od <b>%s</b> ni bila najdena."
+
+#: ../src/Dialogs/FileNotFoundDialog.vala:69
+msgid "%i music files could not be found?"
+msgstr "%i datotek ni bilo mogoče najti?"
+
+#: ../src/Dialogs/FileNotFoundDialog.vala:92
+msgid "Rescan Library"
+msgstr "Ponovno preišči knjižnico"
+
+#: ../src/Dialogs/FileNotFoundDialog.vala:93
+#: ../src/Views/ListView/Lists/MusicListView.vala:129
+msgid "Remove Song"
+msgstr "Odstrani skladbo"
+
+#: ../src/Dialogs/FileNotFoundDialog.vala:95
+msgid "Find Song"
+msgstr "Najdi skladbo"
+
+#: ../src/Dialogs/FileNotFoundDialog.vala:131
+#: ../src/Dialogs/SetMusicFolderConfirmation.vala:107
+msgid "Choose Music Folder"
+msgstr "Izberite mapo z glasbo"
+
+#: ../src/Dialogs/SetMusicFolderConfirmation.vala:59
+msgid "Export Playlists"
+msgstr "Izvozi seznam predvajanja"
+
+#: ../src/Dialogs/SetMusicFolderConfirmation.vala:60
+msgid "Set Music Folder"
+msgstr "Nastavite mapo z glasbo"
+
+#: ../src/Dialogs/SetMusicFolderConfirmation.vala:67
+msgid "Set Music Folder?"
+msgstr "Nastavitev mape z glasbo?"
+
+#: ../src/Dialogs/SetMusicFolderConfirmation.vala:70
+msgid ""
+"Are you sure you want to set the music folder to %s? This will reset your "
+"library and remove your playlists."
+msgstr ""
+"Ali ste prepričani, da želite nastaviti mapo z glasbo k %s? To bo "
+"ponastavilo vašo knjižnico in odstranilo vaše sezname predvajanja."
+
+#: ../src/Dialogs/SyncWarningDialog.vala:57
+msgid "Import media to Library"
+msgstr "Uvozi predstavnost v knjižnico"
+
+#: ../src/Dialogs/SyncWarningDialog.vala:58
+msgid "Continue Syncing"
+msgstr "Nadaljuj usklajevanje"
+
+#: ../src/Dialogs/SyncWarningDialog.vala:59
+msgid "Stop Syncing"
+msgstr "Ustavi usklajevanje"
+
+#: ../src/Dialogs/SyncWarningDialog.vala:66
+msgid ""
+"If you continue to sync, media will be removed from %s since they are not on "
+"the sync list. Would you like to import them to your library first?"
+msgstr ""
+"Če nadaljujete z usklajevanjem, bo predstavna vsebina odstranjena iz %s, saj "
+"ni na seznamu usklajevanja. Ali jo želite najprej uvoziti v svojo knjižnico?"
+
+#: ../src/Dialogs/SyncWarningDialog.vala:72
+msgid "Sync will remove %i items from %s"
+msgstr "Usklajevanje bo odstranilo %i predmetov iz %s"
+
+#: ../src/Dialogs/SyncWarningDialog.vala:75
+msgid "Sync will remove 1 item from %s"
+msgstr "Usklajevanje bo odstranilo 1 predmet iz %s"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:38
+msgid "Smart Playlist Editor"
+msgstr "Urejevalnik pametnega seznama predvajanja"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:49
+#: ../src/Dialogs/SmartPlaylistEditor.vala:57
+msgid "Name of Playlist"
+msgstr "Ime seznama predvajanja"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:50
+#: ../src/Dialogs/SmartPlaylistEditor.vala:58
+msgid "Rules"
+msgstr "Pravila"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:51
+#: ../src/Dialogs/SmartPlaylistEditor.vala:59
+msgid "Options"
+msgstr "Možnosti"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:63
+msgid "Playlist Title"
+msgstr "Naslov seznama predvajanja"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:69
+msgid "Match"
+msgstr "Ujemanje"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:71
+msgid "any"
+msgstr "karkoli"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:72
+msgid "all"
+msgstr "vse"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:77
+msgid "of the following:"
+msgstr "od naslednjih:"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:89
+msgid "Add"
+msgstr "Dodaj"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:94
+msgid "Limit to"
+msgstr "Omeji na"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:96
+msgid "items"
+msgstr "predmetov"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:258
+#: ../src/Widgets/SourceListView.vala:60 ../src/Widgets/SourceListView.vala:74
+msgid "Remove"
+msgstr "Odstrani"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:263
+msgid "Bitrate"
+msgstr "Bitna hitrost"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:266
+msgid "Date Added"
+msgstr "Dodano dne"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:267
+msgid "Date Released"
+msgstr "Datum izdaje"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:270
+msgid "Last Played"
+msgstr "Nazadnje predvajano"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:271
+#: ../src/Dialogs/SmartPlaylistEditor.vala:401
+msgid "Length"
+msgstr "Dolžina"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:272
+msgid "Playcount"
+msgstr "Število predvajanj"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:274
+msgid "Skipcount"
+msgstr "Število preskokov"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:337
+msgid "is"
+msgstr "je"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:338
+msgid "contains"
+msgstr "vsebuje"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:339
+msgid "does not contain"
+msgstr "ne vsebuje"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:364
+#: ../src/Dialogs/SmartPlaylistEditor.vala:377
+msgid "is exactly"
+msgstr "je natanko"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:365
+msgid "is at most"
+msgstr "je največ"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:366
+msgid "is at least"
+msgstr "je najmanj"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:378
+msgid "is within"
+msgstr "je znotraj"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:379
+msgid "is before"
+msgstr "je pred"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:402
+msgid "seconds"
+msgstr "sekund"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:405
+msgid "days ago"
+msgstr "dni nazaj"
+
+#: ../src/Dialogs/SmartPlaylistEditor.vala:408
+msgid "kbps"
+msgstr "kb/s"
+
+#: ../src/Dialogs/NotImportedWindow.vala:58
+#: ../src/Dialogs/NotImportedWindow.vala:70
+msgid "Unable to import %d items from %s"
+msgstr "Nemogoče uvoziti %d predmetov iz %s"
+
+#: ../src/Dialogs/NotImportedWindow.vala:59
+msgid "%s was unable to import %d items. The files may be damaged."
+msgstr "%s ni uspelo uvoziti %d predmetov. Datoteke so lahko poškodovane."
+
+#: ../src/Dialogs/NotImportedWindow.vala:60
+msgid "Move all corrupted files to trash"
+msgstr "Premakni vse pokvarjene datoteke v smeti."
+
+#: ../src/Dialogs/NotImportedWindow.vala:65
+#: ../src/Dialogs/RemoveFilesDialog.vala:56
+msgid "Move to Trash"
+msgstr "Premakni v smeti"
+
+#: ../src/Dialogs/NotImportedWindow.vala:66
+msgid "Ignore"
+msgstr "Prezri"
+
+#: ../src/Dialogs/NotImportedWindow.vala:87
+msgid "del"
+msgstr "izbriši"
+
+#: ../src/Dialogs/NotImportedWindow.vala:92
+msgid "File Location"
+msgstr "Lokacija datoteke"
+
+#: ../src/Dialogs/NotImportedWindow.vala:119
+msgid "Select individual files to move to trash:"
+msgstr "Izberi pozamezne datoteke za premik v smeti."
+
+#: ../src/Dialogs/RemoveFilesDialog.vala:57
+msgid "Remove from %s"
+msgstr "Odstrani iz %s"
+
+#: ../src/Dialogs/RemoveFilesDialog.vala:67
+msgid "Remove %d Songs From %s?"
+msgstr "Odstranitev %d skladb iz %s?"
+
+#: ../src/Dialogs/RemoveFilesDialog.vala:70
+msgid "Remove \"%s\" From %s?"
+msgstr "Odstranitev \"%s\" iz %s?"
+
+#: ../src/Dialogs/RemoveFilesDialog.vala:79
+msgid ""
+"This will remove the song from your library and from any device that "
+"automatically syncs with %s."
+msgid_plural ""
+"This will remove the songs from your library and from any device that "
+"automatically syncs with %s."
+msgstr[0] ""
+"To bo odstranilo skladbe iz vaše knjižnice in vsake naprave, ki se samodejno "
+"usklajuje z %s."
+msgstr[1] ""
+"To bo odstranilo skladbo iz vaše knjižnice in vsake naprave, ki se samodejno "
+"usklajuje z %s."
+msgstr[2] ""
+"To bo odstranilo skladbi iz vaše knjižnice in vsake naprave, ki se samodejno "
+"usklajuje z %s."
+msgstr[3] ""
+"To bo odstranilo skladbe iz vaše knjižnice in vsake naprave, ki se samodejno "
+"usklajuje z %s."
+
+#: ../src/Views/Wrappers/MusicViewWrapper.vala:50
+msgid "Get Some Tunes"
+msgstr "Pridobi nekaj melodij"
+
+#: ../src/Views/Wrappers/MusicViewWrapper.vala:51
+msgid "Add music to your library."
+msgstr "Dodajte glasbo v vašo knjižnico."
+
+#: ../src/Views/Wrappers/MusicViewWrapper.vala:55
+msgid "Import music from a source into your library."
+msgstr "Uvozi glasbo v knjižnico"
+
+#: ../src/Views/Wrappers/MusicViewWrapper.vala:58
+msgid "Change Music Folder"
+msgstr "Spremeni mapo z glasbo"
+
+#: ../src/Views/Wrappers/MusicViewWrapper.vala:59
+msgid "Load music from a folder, a network or an external disk."
+msgstr "Naloži glasbo iz mape, omrežja ali zunanjega diska."
+
+#: ../src/Views/Wrappers/MusicViewWrapper.vala:104
+#: ../src/Views/Wrappers/MusicViewWrapper.vala:120
+msgid "Import your Music"
+msgstr "Uvozite svojo glasbo"
+
+#: ../src/Views/Wrappers/MusicViewWrapper.vala:104
+#: ../src/Views/Wrappers/MusicViewWrapper.vala:120
+msgid "Import all your Music from %s into your library."
+msgstr "Uvozite vso svojo glasbo iz %s v svojo knjižnico."
+
+#: ../src/Views/Wrappers/MusicViewWrapper.vala:130
+msgid "Select Music Folder"
+msgstr "Izberite mapo z glasbo"
+
+#: ../src/Views/Wrappers/ViewWrapper.vala:446
+msgid "No media"
+msgstr "Ni predstavne vsebine"
+
+#: ../src/Views/Wrappers/PlaylistViewWrapper.vala:101
+#: ../src/Views/Wrappers/PlaylistViewWrapper.vala:116
+#: ../src/Views/Wrappers/ReadOnlyPlaylistViewWrapper.vala:39
+msgid "No Songs"
+msgstr "Ni pesmi"
+
+#: ../src/Views/Wrappers/PlaylistViewWrapper.vala:101
+msgid ""
+"To add songs to this playlist, use the <b>secondary click</b> on an item and "
+"choose <b>Add to Playlist</b>."
+msgstr ""
+"Za dodanje skladb na ta seznam predvajanja uporabite <b>drugotni klik</b> na "
+"predmetu in izberite <b>Dodaj na seznam predvajanja</b>."
+
+#: ../src/Views/Wrappers/PlaylistViewWrapper.vala:104
+msgid "Edit Smart Playlist"
+msgstr "Uredi pameten seznam predvajanja"
+
+#: ../src/Views/Wrappers/PlaylistViewWrapper.vala:116
+msgid ""
+"This playlist will be automatically populated with songs that match its "
+"rules. To modify these rules, use the <b>secondary click</b> on it in the "
+"sidebar and click on <b>Edit</b>. Optionally, you can click on the button "
+"below."
+msgstr ""
+"Ta seznam predvajanja bo samodejno zapolnjen s skladbami, ki se ujemajo z "
+"zahtevami. Za urejanje teh zahtev uporabite na njem <b>drugotni klik</b> v "
+"stranski vrstici in kliknite na <b>Uredi</b>. Lahko pa tudi kliknete na "
+"spodnji gumb."
+
+#: ../src/Views/Wrappers/ReadOnlyPlaylistViewWrapper.vala:40
+msgid "Updating playlist. Please wait."
+msgstr "Seznam predvajanja se posodablja. Prosimo počakajte."
+
+#: ../src/Views/GridView/GridView.vala:54
+msgid "No Albums Found."
+msgstr "Najdenega ni nobenega albuma."
+
+#: ../src/Views/GridView/GridView.vala:146
+msgid "%u album"
+msgid_plural "%u albums"
+msgstr[0] "%u albumov"
+msgstr[1] "%u album"
+msgstr[2] "%u albuma"
+msgstr[3] "%u albumi"
+
+#: ../src/Views/GridView/PopupListView.vala:61
+msgid "Set new album cover"
+msgstr "Nastavi novo naslovnico albuma"
+
+#: ../src/Views/GridView/PopupListView.vala:161
+msgctxt "Title format used on Album View Popup: $ALBUM by $ARTIST"
+msgid "%s by %s"
+msgstr "%s od %s"
+
+#: ../src/Views/GridView/PopupListView.vala:261
+msgid "_Cancel"
+msgstr "_Prekliči"
+
+#: ../src/Views/GridView/PopupListView.vala:261
+msgid "_Open"
+msgstr "_Odpri"
+
+#: ../src/Views/GridView/PopupListView.vala:264
+msgid "Image files"
+msgstr "Slikovne datoteke"
+
+#: ../src/Views/DeviceView.vala:39
+msgid "Cancelling…"
+msgstr "Preklic ..."
+
+#: ../src/Views/DeviceView.vala:39
+msgid "Device operation has been cancelled and will stop after this media."
+msgstr ""
+"Opravilo naprave je preklicano in se bo končalo po tej predstavni vsebini."
+
+#: ../src/Views/DeviceView.vala:60
+msgid "OK"
+msgstr "V redu"
+
+#: ../src/Views/DeviceView.vala:101
+msgid "No External Songs"
+msgstr "Ni zunanjih pesmi"
+
+#: ../src/Views/DeviceView.vala:101
+msgid ""
+"There were no songs found on this device that are not in your library."
+msgstr "Na napravi ni bilo najdenih pesmi, ki niso v tvoji knjižnici."
+
+#: ../src/Views/ContentView.vala:21
+msgctxt ""
+"Format used on statusbar: $description, $total_duration, $total_file_size"
+msgid "%s, %s, %s"
+msgstr "%s, %s, %s"
+
+#: ../src/Views/ListView/ListView.vala:86
+msgid "No Songs Found."
+msgstr "Najdene ni nobene skladbe."
+
+#: ../src/Views/ListView/ListView.vala:366
+msgid "%i track"
+msgid_plural "%i tracks"
+msgstr[0] "%i sledi"
+msgstr[1] "%i sled"
+msgstr[2] "%i sledi"
+msgstr[3] "%i sledi"
+
+#: ../src/Views/ListView/ListView.vala:368
+msgid "%u song"
+msgid_plural "%u songs"
+msgstr[0] "%u skladb"
+msgstr[1] "%u skladba"
+msgstr[2] "%u skladbi"
+msgstr[3] "%u skladbe"
+
+#: ../src/Views/ListView/ListView.vala:376
+msgctxt "Format used on statusbar: $description, $total_duration"
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:210
+msgid "All Genres"
+msgstr "Vse zvrsti"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:212
+msgid "All %i Genres"
+msgstr "Vseh %i zvrsti"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:214
+msgid "No Genres"
+msgstr "Ni zvrsti"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:219
+msgid "All Artists"
+msgstr "Vsi izvajalci"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:221
+msgid "All %i Artists"
+msgstr "Vseh %i izvajalcev"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:223
+msgid "No Artists"
+msgstr "Ni izvajalcev"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:228
+msgid "All Albums"
+msgstr "Vsi albumi"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:230
+msgid "All %i Albums"
+msgstr "Vseh %i albumov"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:232
+msgid "No Albums"
+msgstr "Ni albumov"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:237
+msgid "All Years"
+msgstr "Vsa leta"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:239
+msgid "All %i Years"
+msgstr "Vseh %i let"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:241
+msgid "No Years"
+msgstr "Ni let"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:246
+msgid "All Ratings"
+msgstr "Vse ocenitve"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:248
+msgid "No Ratings"
+msgstr "Ni ocen"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:253
+msgid "All Groupings"
+msgstr "Vse razvrstitve v skupine"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:255
+msgid "All %i Groupings"
+msgstr "Vse %i razvrstitve v skupine"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:257
+msgid "No Groupings"
+msgstr "Ni razvrstitev v skupine"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:262
+msgid "All Composers"
+msgstr "Vsi skladatelji"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:264
+msgid "All %i Composers"
+msgstr "Vsi %i skladatelji"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumnModel.vala:266
+msgid "No Composers"
+msgstr "Ni skladateljev"
+
+#: ../src/Views/ListView/ColumnBrowser/ColumnBrowser.vala:150
+#: ../src/Widgets/PresetList.vala:47
+msgid "Automatic"
+msgstr "Samodejno"
+
+#: ../src/Views/ListView/ColumnBrowser/ColumnBrowser.vala:152
+msgid "On Left"
+msgstr "Na levi"
+
+#: ../src/Views/ListView/ColumnBrowser/ColumnBrowser.vala:154
+msgid "On Top"
+msgstr "Zgoraj"
+
+#: ../src/Views/ListView/ColumnBrowser/ColumnBrowser.vala:401
+msgid "Unrated"
+msgstr "Neocenjeno"
+
+#: ../src/Views/ListView/ColumnBrowser/ColumnBrowser.vala:403
+msgid "%i Star"
+msgid_plural "%i Stars"
+msgstr[0] "%i zvezdic"
+msgstr[1] "%i zvezdica"
+msgstr[2] "%i zvezdici"
+msgstr[3] "%i zvezdice"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumn.vala:53
+msgid "Genres"
+msgstr "Zvrsti"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumn.vala:55
+msgid "Artists"
+msgstr "Izvajalci"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumn.vala:57
+msgid "Albums"
+msgstr "Albumi"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumn.vala:59
+msgid "Years"
+msgstr "Leta"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumn.vala:61
+msgid "Ratings"
+msgstr "Ocenitve"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumn.vala:63
+msgid "Composers"
+msgstr "Skladatelji"
+
+#: ../src/Views/ListView/ColumnBrowser/BrowserColumn.vala:65
+msgid "Groupings"
+msgstr "Razvrstitve v skupine"
+
+#: ../src/Views/ListView/Lists/CellDataFunctionHelper.vala:226
+msgid "%i kbps"
+msgstr "%i kb/s"
+
+#: ../src/Views/ListView/Lists/CellDataFunctionHelper.vala:251
+#: ../src/Views/ListView/Lists/MusicListView.vala:703
+msgid "Never"
+msgstr "Nikoli"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:91
+msgid "Remove from Library"
+msgstr "Odstrani iz knjižnice"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:98
+msgid "Remove from Queue"
+msgstr "Odstrani z vrste"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:108
+msgid "Remove from Device"
+msgstr "Odstrani z naprave"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:121
+msgid "Scroll to Current Song"
+msgstr "Premik do trenutne pesmi"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:124
+msgid "Edit Song Info"
+msgstr "Uredi podatke pesmi"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:125
+msgid "Show in File Browser"
+msgstr "Pokaži v pregledovalniku datotek"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:126
+msgid "Other actions"
+msgstr "Druga dejanja"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:127
+msgctxt "Action item (verb)"
+msgid "Queue"
+msgstr "V vrsto"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:128
+msgid "Add to Playlist"
+msgstr "Dodaj na seznam predvajanja"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:130
+#: ../src/Widgets/SourceListView.vala:148
+msgid "Import to Library"
+msgstr "Uvozi v knjižnico"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:214
+msgid "New Playlist…"
+msgstr "Nov seznam predvajanja ..."
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:258
+msgid "Import %i of %i selected songs"
+msgstr "Uvoz %i od %i izbranih pesmi"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:260
+msgid "Import %i song"
+msgid_plural "Import %i songs"
+msgstr[0] "Uvoz %i skladb"
+msgstr[1] "Uvoz %i skladbe"
+msgstr[2] "Uvoz %i skladb"
+msgstr[3] "Uvoz %i skladb"
+
+#: ../src/Views/ListView/Lists/MusicListView.vala:688
+msgid "1234 kbps"
+msgstr "1234 kbps"
+
+#. / Sample string used to measure the ideal size of the Title, Artist,
+#. / Album, Album Artist, Composer, Genre, and Grouping columns in the
+#. / list view. It's *never* displayed in the user interface. The translated
+#. / string should have a reasonable length, similar to the average length
+#. / of a song title or artist name in your language. The automatic column
+#. / width will depend on the length of this string and the space needed
+#. / by the column's title header.
+#: ../src/Views/ListView/Lists/MusicListView.vala:768
+msgid "Sample List String"
+msgstr "Vzorec Seznam Niz"
+
+#: ../src/Views/ListView/Lists/GenericList.vala:116
+msgid "Autosize Columns"
+msgstr "Samodejna velikost stolpcev"
+
+#: ../src/Views/ListView/Lists/GenericList.vala:123
+msgid "Display Album Art"
+msgstr "Prikaži podobo albuma"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:58
+msgctxt "List column title"
+msgid "#"
+msgstr "št."
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:61
+msgctxt "List column title"
+msgid "Track"
+msgstr "Sled"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:64
+msgctxt "List column title"
+msgid "Title"
+msgstr "Naslov"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:67
+msgctxt "List column title"
+msgid "Length"
+msgstr "Čas trajanja"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:70
+msgctxt "List column title"
+msgid "Artist"
+msgstr "Izvajalec"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:73
+msgctxt "List column title"
+msgid "Album"
+msgstr "Album"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:76
+msgctxt "List column title"
+msgid "Album Artist"
+msgstr "Izvajalec albuma"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:79
+msgctxt "List column title"
+msgid "Composer"
+msgstr "Skladatelj"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:82
+msgctxt "List column title"
+msgid "Genre"
+msgstr "Zvrst"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:85
+msgctxt "List column title"
+msgid "Year"
+msgstr "Leto"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:88
+msgctxt "List column title"
+msgid "Grouping"
+msgstr "Razvrstev v skupine"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:91
+msgctxt "List column title"
+msgid "Bitrate"
+msgstr "Bitna hitrost"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:94
+msgctxt "List column title"
+msgid "Rating"
+msgstr "Ocena"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:97
+msgctxt "List column title"
+msgid "Plays"
+msgstr "Predvajanj"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:100
+msgctxt "List column title"
+msgid "Skips"
+msgstr "Preskokov"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:103
+msgctxt "List column title"
+msgid "Date Added"
+msgstr "Dodano dne"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:106
+msgctxt "List column title"
+msgid "Last Played"
+msgstr "Nazadnje predvajano"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:109
+msgctxt "List column title (beats per minute)"
+msgid "BPM"
+msgstr "udarcev/min"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:112
+msgctxt "List column title (file location)"
+msgid "Location"
+msgstr "Mesto"
+
+#: ../src/Views/ListView/Lists/ListColumn.vala:115
+msgctxt "List column title"
+msgid "File Size"
+msgstr "Velikost datoteke"
+
+#: ../src/Views/DeviceSummaryWidget.vala:81
+msgid "Device Name:"
+msgstr "Ime naprave:"
+
+#: ../src/Views/DeviceSummaryWidget.vala:85
+msgid "Device Name"
+msgstr "Ime naprave"
+
+#: ../src/Views/DeviceSummaryWidget.vala:87
+msgid "Automatically sync when plugged in:"
+msgstr "Samodejno uskladi ob priklopu:"
+
+#: ../src/Views/DeviceSummaryWidget.vala:94
+msgid "Sync:"
+msgstr "Uskladi:"
+
+#: ../src/Views/DeviceSummaryWidget.vala:106
+msgid "Other Files"
+msgstr "Druge datoteke"
+
+#: ../src/Views/DeviceSummaryWidget.vala:108
+msgid "Podcasts"
+msgstr "Poddaje"
+
+#: ../src/Views/DeviceSummaryWidget.vala:269
+msgid "All Music"
+msgstr "Vsa glasba"
+
+#: ../src/Views/DeviceSummaryWidget.vala:322
+msgid "Sync Failed"
+msgstr "Uskladitev spodletela"
+
+#: ../src/Views/DeviceSummaryWidget.vala:322
+msgid ""
+"The playlist named %s is used to sync device %s, but could not be found."
+msgstr ""
+"Seznam predvajanja, imenovan %s, je uporabljen za uskladitev naprave %s, a "
+"je ni mogoče najti."
+
+#: ../src/Views/DeviceSummaryWidget.vala:334
+#: ../src/Views/DeviceSummaryWidget.vala:337
+msgid "Cannot Sync"
+msgstr "Ni mogoče uskladiti"
+
+#: ../src/Views/DeviceSummaryWidget.vala:334
+msgid ""
+"Cannot sync device with selected sync settings. Not enough space on disk"
+msgstr ""
+"Naprave ni mogoče uskladiti z izbranimi nastavitvami usklajevanja. Na disku "
+"ni dovolj prostora"
+
+#: ../src/Views/DeviceSummaryWidget.vala:337
+msgid "Device is already doing an operation."
+msgstr "Naprava že izvaja opravilo."
+
+#: ../src/DataBase/DataBaseManager.vala:452
+#: ../src/DataBase/DataBaseManager.vala:688
+msgid "Favorite Songs"
+msgstr "Priljubljene pesmi"
+
+#: ../src/DataBase/DataBaseManager.vala:459
+#: ../src/DataBase/DataBaseManager.vala:695
+msgid "Recently Added"
+msgstr "Dodano pred kratkim"
+
+#: ../src/DataBase/DataBaseManager.vala:475
+#: ../src/DataBase/DataBaseManager.vala:711
+msgid "Recent Favorites"
+msgstr "Priljubljeno pred kratkim"
+
+#: ../src/DataBase/DataBaseManager.vala:482
+#: ../src/DataBase/DataBaseManager.vala:718
+msgid "Never Played"
+msgstr "Nikoli predvajano"
+
+#: ../src/DataBase/DataBaseManager.vala:489
+#: ../src/DataBase/DataBaseManager.vala:725
+msgid "Over Played"
+msgstr "Preveč predvajano"
+
+#: ../src/DataBase/DataBaseManager.vala:496
+#: ../src/DataBase/DataBaseManager.vala:732
+msgid "Not Recently Played"
+msgstr "Dolgo nepredvajano"
+
+#: ../src/FileOperator.vala:347
+msgid "Import Complete"
+msgstr "Uvoz je končan"
+
+#: ../src/FileOperator.vala:347
+msgid "%s has imported your library."
+msgstr "%s je uvozil vašo knjižnico."
+
+#: ../src/FileOperator.vala:362
+msgid "<b>Copying</b> files to <b>Music Folder</b>…"
+msgstr "<b>Kopiranje</b> datotek v <b>mapo Glasba</b> …"
+
+#: ../src/LocalLibrary.vala:164
+msgid "Importing music from %s…"
+msgstr "Uvažanje glasbe iz %s ..."
+
+#: ../src/LocalLibrary.vala:201
+msgid "Adding files to library…"
+msgstr "Dodajanje datotek v knjižnico ..."
+
+#: ../src/LocalLibrary.vala:252
+msgid "All music files are already in your library"
+msgstr "Vse glasbene datoteke so že v vaši knjižnici"
+
+#: ../src/LocalLibrary.vala:252
+msgid "No files were imported."
+msgstr "Nobena datoteka ni bila uvožena."
+
+#: ../src/LocalLibrary.vala:262
+msgid "Rescanning music for changes. This may take a while…"
+msgstr ""
+"Ponovno preiskovanje glasbe zaradi sprememb. To lahko traja nekaj časa ..."
+
+#: ../src/LocalLibrary.vala:339
+msgid "Added to your queue:"
+msgstr "Dodano v čakalno vrsto:"
+
+#: ../src/Widgets/SourceListView.vala:59 ../src/Widgets/SourceListView.vala:72
+msgid "Rename"
+msgstr "Preimenuj"
+
+#: ../src/Widgets/SourceListView.vala:61 ../src/Widgets/SourceListView.vala:75
+#: ../src/Widgets/SourceListView.vala:90
+msgid "Export…"
+msgstr "Izvozi ..."
+
+#: ../src/Widgets/SourceListView.vala:73
+msgid "Edit…"
+msgstr "Uredi …"
+
+#: ../src/Widgets/SourceListView.vala:88
+msgid "Save as Playlist"
+msgstr "Shrani kot seznam predvajanja"
+
+#: ../src/Widgets/SourceListView.vala:156
+msgid "Eject"
+msgstr "Izvrzi"
+
+#: ../src/Widgets/SourceListView.vala:161
+#: ../src/Widgets/SourceListView.vala:201
+msgid "New Playlist"
+msgstr "Nov seznam predvajanja"
+
+#: ../src/Widgets/SourceListView.vala:166
+#: ../src/Widgets/SourceListView.vala:202
+msgid "New Smart Playlist"
+msgstr "Nov pameten seznam predvajanja"
+
+#: ../src/Widgets/SourceListView.vala:171 ../src/Widgets/SpaceWidget.vala:237
+msgid "Sync"
+msgstr "Uskladi"
+
+#: ../src/Widgets/SourceListView.vala:203
+msgid "Import Playlists"
+msgstr "Uvozi predvajalne sezname"
+
+#: ../src/Widgets/SourceListView.vala:313
+msgid "Library"
+msgstr "Knjižnica"
+
+#: ../src/Widgets/SourceListView.vala:314
+msgid "Devices"
+msgstr "Naprave"
+
+#: ../src/Widgets/SourceListView.vala:315
+msgid "Network"
+msgstr "Omrežje"
+
+#: ../src/Widgets/SourceListView.vala:316 ../plugins/MPRIS/MPRIS.vala:640
+msgid "Playlists"
+msgstr "Seznami predvajanja"
+
+#: ../src/Widgets/PresetList.vala:48
+msgid "Delete Current"
+msgstr "Izbriši trenutno"
+
+#: ../src/Widgets/SpaceWidget.vala:266
+msgid "Free"
+msgstr "Brezplačno"
+
+#: ../src/Widgets/SpaceWidget.vala:383
+msgid "Using %s of %s (%.2f%)"
+msgstr "Uporabljano %s od %s (%.2f%)"
+
+#: ../src/Widgets/EqualizerPopover.vala:157
+msgid "Save preset"
+msgstr "Shrani prednastavitev"
+
+#: ../src/Widgets/EqualizerPopover.vala:403
+msgid "%s (Custom)"
+msgstr "%s (Poljubno)"
+
+#: ../src/Widgets/EqualizerPopover.vala:405
+msgid "%s (Custom %i)"
+msgstr "%s (Poljubno %i)"
+
+#: ../src/Widgets/EqualizerPopover.vala:408
+msgid "Custom Preset"
+msgstr "Poljubna prednastavitev"
+
+#: ../src/Widgets/EqualizerPopover.vala:410
+msgid "Custom Preset %i"
+msgstr "Poljubna prednastavitev %i"
+
+#: ../src/Widgets/ViewSelector.vala:68
+msgid "View as Albums"
+msgstr "Pogled albumov"
+
+#: ../src/Widgets/ViewSelector.vala:72
+msgid "View as List"
+msgstr "Pogled seznama"
+
+#: ../src/Widgets/ViewSelector.vala:76
+msgid "View in Columns"
+msgstr "Pogled v stolpcih"
+
+#: ../src/Widgets/StatusBar.vala:68 ../src/Widgets/StatusBar.vala:101
+msgid "Off"
+msgstr "Izključeno"
+
+#: ../src/Widgets/StatusBar.vala:68
+msgid "Enable Repeat"
+msgstr "Omogoči ponavljanje"
+
+#: ../src/Widgets/StatusBar.vala:69
+msgid "Song"
+msgstr "Skladba"
+
+#: ../src/Widgets/StatusBar.vala:69
+msgid "Repeat Song"
+msgstr "Ponovi skladbo"
+
+#: ../src/Widgets/StatusBar.vala:70
+msgid "Repeat Album"
+msgstr "Ponovi album"
+
+#: ../src/Widgets/StatusBar.vala:71
+msgid "Repeat Artist"
+msgstr "Ponovi izvajalca"
+
+#: ../src/Widgets/StatusBar.vala:72 ../src/Widgets/StatusBar.vala:102
+msgid "All"
+msgstr "Vse"
+
+#: ../src/Widgets/StatusBar.vala:72
+msgid "Disable Repeat"
+msgstr "Onemogoči ponavljanje"
+
+#: ../src/Widgets/StatusBar.vala:101
+msgid "Enable Shuffle"
+msgstr "Omogoči prerazporeditev"
+
+#: ../src/Widgets/StatusBar.vala:102
+msgid "Disable Shuffle"
+msgstr "Onemogoči prerazporeditev"
+
+#: ../src/Widgets/StatusBar.vala:135 ../src/Widgets/StatusBar.vala:146
+msgid "Add Playlist"
+msgstr "Dodaj seznam predvajanja"
+
+#: ../src/Widgets/StatusBar.vala:147
+msgid "Add Smart Playlist"
+msgstr "Dodaj pametni seznam predvajanja"
+
+#: ../src/Widgets/StatusBar.vala:197
+msgid "Hide"
+msgstr "Skrij"
+
+#: ../src/Widgets/StatusBar.vala:197
+msgid "Show Info Panel"
+msgstr "Pokaži pult podrobnosti"
+
+#: ../src/Widgets/StatusBar.vala:198
+msgid "Show"
+msgstr "Pokaži"
+
+#: ../src/Widgets/StatusBar.vala:198
+msgid "Hide Info Panel"
+msgstr "Skrij pult podrobnosti"
+
+#: ../src/Objects/LyricFetcher.vala:155
+msgid "Lyrics fetched from www.lyricsmania.com"
+msgstr "Besedilo pridobljeno iz www.lyricsmania.com"
+
+#: ../src/Objects/TrackInfo.vala:25
+msgid "Unknown Track"
+msgstr "Neznana sled"
+
+#: ../src/Objects/AlbumInfo.vala:25
+msgid "Unknown Album"
+msgstr "Neznan album"
+
+#: ../src/Objects/AlbumInfo.vala:26 ../src/Objects/ArtistInfo.vala:27
+msgid "Unknown Artist"
+msgstr "Neznan izvajalec"
+
+#: ../plugins/LastFM/SimilarMediaView.vala:41
+msgid "media"
+msgstr "predstavnost"
+
+#: ../plugins/LastFM/SimilarMediaView.vala:45
+msgid "Similar Media"
+msgstr "Podobna predstavnost"
+
+#: ../plugins/LastFM/LastFM.vala:71
+msgid "No similar songs found"
+msgstr "Ni najdenih podobnih pesmi"
+
+#: ../plugins/LastFM/LastFM.vala:71
+msgid ""
+"There are no songs similar to the current song in your library. Make sure "
+"all song info is correct and you are connected to the Internet. Some songs "
+"may not have matches."
+msgstr ""
+"Ni skladb, podobnih trenutni skladbi v vaši knjižnici. Prepričajte se, da so "
+"podatki vseh skladb ustrezni in da ste povezani z internetom. Nekatere "
+"skladbe morda ne bodo imele ujemanj."
+
+#: ../plugins/LastFM/SimilarMedia.vala:42
+msgid "Similar"
+msgstr "Podobno"
+
+#: ../plugins/LastFM/PreferencesSection.vala:30
+msgid "Give %s Permission"
+msgstr "Odobrite pravice programu %s"
+
+#: ../plugins/LastFM/PreferencesSection.vala:31
+msgid "Unsuccessful. Click To Try Again."
+msgstr "Neuspešno. Kliknite za ponovni poizkus."
+
+#: ../plugins/LastFM/PreferencesSection.vala:32
+msgid "Scrobbling Already Enabled"
+msgstr "Beleženje poslušanih skladb je že omogočeno"
+
+#: ../plugins/LastFM/PreferencesSection.vala:33
+msgid "Success!"
+msgstr "Uspešno!"
+
+#: ../plugins/LastFM/PreferencesSection.vala:34
+msgid "Complete Login"
+msgstr "Celotna prijava"
+
+#: ../plugins/LastFM/PreferencesSection.vala:43
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: ../plugins/LastFM/PreferencesSection.vala:48
+msgid "Last.fm Integration"
+msgstr "Podpora Last.fm"
+
+#: ../plugins/LastFM/PreferencesSection.vala:55
+msgid "Click to redo the Last.fm login process"
+msgstr "Kliknite za uveljavitev opravila prijave Last.fm"
+
+#: ../plugins/LastFM/PreferencesSection.vala:58
+msgid ""
+"To allow for Last.fm integration, you must give permission to %s. You only "
+"need to do this once."
+msgstr ""
+"Da omogočite integracijo z Last.fm, morate programu %s podati pravice. To "
+"morate narediti samo enkrat."
+
+#: ../plugins/Devices/iPod/iPodDevice.vala:70
+#: ../plugins/Devices/AudioPlayers/AudioPlayerDevice.vala:113
+msgid "Empty device!"
+msgstr "Prazna naprava!"
+
+#: ../plugins/Devices/iPod/iPodDevice.vala:74
+#: ../plugins/Devices/AudioPlayers/AudioPlayerDevice.vala:117
+msgid "This device does not contain any music."
+msgstr "Ta naprava ne vsebuje nobene glasbe."
+
+#: ../plugins/Devices/iPod/iPodLibrary.vala:148
+#: ../plugins/Devices/AudioPlayers/AudioPlayerLibrary.vala:140
+msgid "Adding <b>$NAME</b> by <b>$ARTIST</b> to $DEVICE"
+msgstr "Dodajanje <b>$NAME</b> od <b>$ARTIST</b> na $DEVICE"
+
+#: ../plugins/Devices/iPod/iPodLibrary.vala:196
+#: ../plugins/Devices/iPod/iPodLibrary.vala:584
+#: ../plugins/Devices/AudioPlayers/AudioPlayerLibrary.vala:164
+#: ../plugins/Devices/AudioPlayers/AudioPlayerLibrary.vala:202
+msgid "Syncing <b>%s</b>…"
+msgstr "Usklajevanje <b>%s</b> …"
+
+#: ../plugins/Devices/iPod/iPodLibrary.vala:220
+#: ../plugins/Devices/iPod/iPodLibrary.vala:380
+#: ../plugins/Devices/iPod/iPodLibrary.vala:637
+#: ../plugins/Devices/AudioPlayers/AudioPlayerLibrary.vala:256
+msgid "Finishing sync process…"
+msgstr "Končevanje opravila usklajevanja ..."
+
+#: ../plugins/Devices/iPod/iPodLibrary.vala:232
+#: ../plugins/Devices/iPod/iPodLibrary.vala:392
+#: ../plugins/Devices/iPod/iPodLibrary.vala:657
+#: ../plugins/Devices/AudioPlayers/AudioPlayerLibrary.vala:259
+msgid "Cancelling Sync…"
+msgstr "Preklicevanje usklajevanja ..."
+
+#: ../plugins/Devices/iPod/iPodLibrary.vala:342
+#: ../plugins/Devices/AudioPlayers/AudioPlayerLibrary.vala:393
+msgid "Removing from <b>%s</b>…"
+msgstr "Odstranjevanje iz <b>%s</b> …"
+
+#: ../plugins/Devices/iPod/iPodLibrary.vala:535
+#: ../plugins/Devices/AudioPlayers/AudioPlayerLibrary.vala:362
+msgid "Removing <b>$NAME</b> by <b>$ARTIST</b> from $DEVICE"
+msgstr "Odstranjevanje <b>$NAME</b> od <b>$ARTIST</b> iz $DEVICE"
+
+#: ../plugins/Devices/iPod/iPodLibrary.vala:667
+#: ../plugins/Devices/iPod/iPodLibrary.vala:668
+#: ../plugins/Devices/AudioPlayers/AudioPlayerLibrary.vala:263
+#: ../plugins/Devices/AudioPlayers/AudioPlayerLibrary.vala:264
+msgid "There is not enough space on Device to complete the Sync…"
+msgstr "Na napravi ni dovolj prostora za dokončanje usklajevanja ..."
+
+#: ../plugins/Devices/AudioPlayers/AudioPlayerDevice.vala:161
+msgid "Android Phone"
+msgstr "Telefon z Andoidom"
+
+#: ../plugins/Devices/AudioPlayers/AudioPlayerDevice.vala:163
+msgid "Audio Player"
+msgstr "Zvočni predvajalnik"
+
+#: ../plugins/Devices/CDRom/CDViewWrapper.vala:32
+msgid "An Error Occured"
+msgstr "Prišlo je do napake"
+
+#: ../plugins/Devices/CDRom/CDViewWrapper.vala:33
+msgid "There was an error while loading this Audio CD."
+msgstr "Med nalaganjem zvočnega CD-ja je prišlo do napake."
+
+#: ../plugins/Devices/CDRom/CDRomDevice.vala:94
+msgid "Audio CD Invalid"
+msgstr "Neveljaven zvočni CD"
+
+#: ../plugins/Devices/CDRom/CDRomDevice.vala:98
+msgid "Impossible to read the contents of this Audio CD"
+msgstr "Ni mogoče prebrati vsebine tega zvočnega CD-ja"
+
+#: ../plugins/Devices/CDRom/CDRomDevice.vala:250
+msgid "Could not find Music Folder"
+msgstr "Ni mogoče najti mape z glasbo"
+
+#: ../plugins/Devices/CDRom/CDRomDevice.vala:250
+msgid ""
+"Please make sure that your music folder is accessible and mounted before "
+"importing the CD."
+msgstr ""
+"Preden začnete z uvozom CD-ja, se prepričajte, da je mapa z glasbo dostopna "
+"in priklopljena."
+
+#: ../plugins/Devices/CDRom/CDRomDevice.vala:256
+msgid ""
+"The Application could not find any songs on the CD. No songs can be imported"
+msgstr ""
+"Program ni najdel nobene skladbe na CD-ju. Nobene skladbe ni mogoče uvoziti"
+
+#: ../plugins/Devices/CDRom/CDRomDevice.vala:357
+msgid "Importation of a song from Audio CD finished."
+msgstr "Uvoz skladbe z zvočnega CD-ja je končan."
+
+#: ../plugins/Devices/CDRom/CDRomDevice.vala:357
+msgid "Importation of %i songs from Audio CD finished."
+msgstr "Uvoz %i skladb z zvočnega CD-ja je končan."
+
+#: ../plugins/Devices/CDRom/CDRomDevice.vala:362
+msgid "Importing track %i: %s"
+msgstr "Uvoz sledi %i: %s"
+
+#: ../plugins/Devices/CDRom/CDRomDevice.vala:367
+msgid "CD import will be <b>cancelled</b> after current import."
+msgstr "Uvoz CD-ja bo <b>preklican</b> po trenutnem uvozu."
+
+#: ../plugins/Devices/CDRom/CDRomDevice.vala:386
+msgid "An error occured during the Import of this CD"
+msgstr "Med uvažanjem tega CD-ja se je pojavila napaka"
+
+#~ msgid "Done"
+#~ msgstr "Končano"
+
+#~ msgid "is not"
+#~ msgstr "ni"
+
+#~ msgid "Add Podcast"
+#~ msgstr "Dodaj poddajo"
+
+#~ msgid "Podcast"
+#~ msgstr "Poddaja"
+
+#~ msgid "Import Stations"
+#~ msgstr "Uvozi postaje"
+
+#~ msgid "Export..."
+#~ msgstr "Izvozi ..."
+
+#~ msgid "Edit"
+#~ msgstr "Uredi"
+
+#, c-format
+#~ msgid "%s Stars"
+#~ msgstr "%s zvezdic"
+
+#, c-format
+#~ msgid "All %i Ratings"
+#~ msgstr "Vseh %i ocenitev"
+
+#~ msgid "#"
+#~ msgstr "#"
+
+#, c-format
+#~ msgid "Similar to %s"
+#~ msgstr "Podobno kot %s"
+
+#~ msgid "Skips"
+#~ msgstr "Preskokov"
+
+#~ msgid "Plays"
+#~ msgstr "Predvajanj"
+
+#~ msgid "All Podcasts"
+#~ msgstr "Vse poddaje"
+
+#~ msgid "Device is already being synced."
+#~ msgstr "Naprava se že usklajuje."
+
+#~ msgid "Rescan Music Folder"
+#~ msgstr "Ponovno preišči mapo z glasbo"
+
+#~ msgid "Queue"
+#~ msgstr "Vrsta"
+
+#~ msgid "Import songs from audio CD"
+#~ msgstr "Uvozi pesmi iz zvočnega CD-ja"
+
+#, c-format
+#~ msgid "%s is already doing an import"
+#~ msgstr "%s že uvaža"
+
+#, c-format
+#~ msgid "%s has finished importing %i songs from Audio CD."
+#~ msgstr "%s je zaključil uvoz pesmi %i iz avdio CDja."
+
+#, c-format
+#~ msgid ""
+#~ "Please wait until %s is finished with the current import before importing "
+#~ "the CD."
+#~ msgstr "Prosim počakajte da %s konča z uvažanjem trenutnega CDja."
+
+#~ msgid "Ripping track 1"
+#~ msgstr "Kopiranje pesmi 1"
+
+#, c-format
+#~ msgid "Importing track %i"
+#~ msgstr "Uvažanje pesmi %i"
+
+#~ msgid "CD Import Complete"
+#~ msgstr "Uvoz CDja je zaključen"
+
+#, c-format
+#~ msgid "Importing music from %s..."
+#~ msgstr "Uvozi glasbo iz %s ..."
+
+#~ msgid "Adding files to library..."
+#~ msgstr "Dodajanje datotek v knjižnico ..."
+
+#~ msgid "Rescanning music for changes. This may take a while..."
+#~ msgstr ""
+#~ "Ponovno preiskovanje glasbe za spremembami. To lahko traja nekaj časa ..."
+
+#, c-format
+#~ msgid "Adding music from %s to library..."
+#~ msgstr "Dodajanje glasbe iz %s v knjižnico ..."
+
+#~ msgid "Recently Played"
+#~ msgstr "Predvajano pred kratkim"
+
+#~ msgid "Unheard Podcasts"
+#~ msgstr "Neslišane poddaje"
+
+#~ msgid "Show Equalizer"
+#~ msgstr "Pokaži izenačevalnik"
+
+#~ msgid "Hide Equalizer"
+#~ msgstr "Skrij izenačevalnik"
+
+#, c-format
+#~ msgid "<b>Importing</b> music from <b>%s</b> to library."
+#~ msgstr "<b>Uvažanje</b> glasbe iz <b>%s</b> v knjižnico."
+
+#~ msgid "1 Star"
+#~ msgstr "1 zvezdica"
+
+#~ msgid "Episode"
+#~ msgstr "Epizoda"
+
+#~ msgid "Name"
+#~ msgstr "Ime"
+
+#~ msgid "Station"
+#~ msgstr "Postaja"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Category"
+#~ msgstr "Kategorija"
+
+#~ msgid "Import this song"
+#~ msgstr "Uvozi to pesem"
+
+#, c-format
+#~ msgid "Import %i songs"
+#~ msgstr "Uvoz %i pesmi"
+
+#~ msgid "%u items, %s, %s"
+#~ msgstr "%u predmetov, %s, %s"
+
+#~ msgid "%d minutes"
+#~ msgstr "%d minut"
+
+#~ msgid "%d days"
+#~ msgstr "%d dni"
+
+#~ msgid "%d hours"
+#~ msgstr "%d ur"
+
+#~ msgid "Fetching similar songs"
+#~ msgstr "Pridobivanje podobnih pesmi"
+
+#~ msgid "Similar Song View"
+#~ msgstr "Pogled podobnih pesmi"
+
+#, c-format
+#~ msgid "%i albums"
+#~ msgstr "%i albumov"
+
+#~ msgid "1 album"
+#~ msgstr "1 album"
+
+#~ msgid "All the songs in this device are already in your library."
+#~ msgstr "Vse pesmi na tej napravi so že v tvoji knjižnici."
+
+#, c-format
+#~ msgid "%i songs"
+#~ msgstr "%i pesmi"
+
+#~ msgid "1 song"
+#~ msgstr "1 pesem"
+
+#~ msgid "1 day"
+#~ msgstr "1 dan"
+
+#~ msgid "1 second"
+#~ msgstr "1 sekunda"
+
+#, c-format
+#~ msgid "%s seconds"
+#~ msgstr "%s sekund"
+
+#, c-format
+#~ msgid "%s could not read the contents of this Audio CD"
+#~ msgstr "%s ne more prebrati vsebine tega zvočnega CD-ja."
+
+#~ msgid "1 track"
+#~ msgstr "1 sled"
+
+#, c-format
+#~ msgid "%i tracks"
+#~ msgstr "%i sledi"
+
+#, c-format
+#~ msgid "%i hours"
+#~ msgstr "%i ur"
+
+#~ msgid "1 minute"
+#~ msgstr "1 minuta"
+
+#~ msgid "1 hour"
+#~ msgstr "1 ura"
+
+#, c-format
+#~ msgid "%i minutes"
+#~ msgstr "%i minut"
+
+#, c-format
+#~ msgid "%s and %s"
+#~ msgstr "%s in %s"
+
+#~ msgid "Unknown Title"
+#~ msgstr "Neznan naslov"
+
+#, c-format
+#~ msgid "%s, %s and %s"
+#~ msgstr "%s, %s in %s"
+
+#, c-format
+#~ msgid "%i days"
+#~ msgstr "%i dni"
+
+#~ msgid "Not Imported Files"
+#~ msgstr "Neuvožene datoteke"
+
+#~ msgid "Do Nothing"
+#~ msgstr "Ne naredi ničesar"
+
+#~ msgid "Could not find media file"
+#~ msgstr "Ni mogoče najti predstavnostne datoteke"
+
+#~ msgid "Remove Media"
+#~ msgstr "Odstrani predstavnost"
+
+#~ msgid "Radio Station"
+#~ msgstr "Radijska postaja"
+
+#~ msgid "Repeat All"
+#~ msgstr "Ponovi vse"
+
+#~ msgid "Equalizer"
+#~ msgstr "Izenačevalnik"
+
+#~ msgid "Required GStreamer plugin not installed"
+#~ msgstr "Potreben GStreamer vtičnik ni nameščen"
+
+#~ msgid "Media Type"
+#~ msgstr "Predstavnostni tip"
+
+#~ msgid "Music Folder"
+#~ msgstr "Mapa z glasbo"
+
+#~ msgid "Music Folder Location"
+#~ msgstr "Lokacija mape z glasbo"
+
+#~ msgid "Library Management"
+#~ msgstr "Upravljanje knjižnice"
+
+#~ msgid ""
+#~ "Import from device has been cancelled. Operation will stop after this media."
+#~ msgstr ""
+#~ "Uvoz z naprave je bil preklican. Dejanje se bo po tej predstavni vsebini "
+#~ "ustavila."
+
+#~ msgid "Cancelling Sync"
+#~ msgstr "Preklic usklajevanja"
+
+#~ msgid "Cancelling Import"
+#~ msgstr "Preklic uvoza"
+
+#~ msgid "Device Sync has been cancelled. Operation will stop after this media."
+#~ msgstr ""
+#~ "Usklajevanje naprave je bilo preklicano. Dejanje se bo po tej predstavni "
+#~ "vsebini ustavila."
+
+#~ msgid "Metadata"
+#~ msgstr "Metapodatki"
+
+#, c-format
+#~ msgid "The name %s is already in use"
+#~ msgstr "Ime %s je že v uporabi"
+
+#~ msgid "%i media files could not be found. What would you like to do?"
+#~ msgstr "%i predstavnih vsebin ni bilo mogoče najti. Kaj želite storiti?"
+
+#~ msgid ""
+#~ "The plugin for media type %s is not installed.\n"
+#~ "What would you like to do?"
+#~ msgstr ""
+#~ "Vstavek za predstavno vrsto %s ni nameščen.\n"
+#~ "Kaj želite narediti?"
+
+#, c-format
+#~ msgid "%s has finished importing a song from Audio CD."
+#~ msgstr "%s je končal z uvozom skladbe z Audio CD-ja."
+
+#~ msgid "No songs on CD"
+#~ msgstr "Na CD-ju ni skladb"
+
+#~ msgid "Please make sure that your music folder is accessible and mounted."
+#~ msgstr "Prepričajte se, da je mapa z glasbo dostopna in priklopljena."
+
+#~ msgid "Rescanning music folder for changes"
+#~ msgstr "Ponovno preiskovanje mape z glasbo za spremembami"
+
+#~ msgid "Change your music folder."
+#~ msgstr "Spremenite svojo mapo z glasbo"
+
+#, c-format
+#~ msgid "%s could not find any songs on the CD. No songs can be imported"
+#~ msgstr ""
+#~ "%s ni našel nobene skladbe na CD-ju. Nobene skladbe ni mogoče uvoziti"
+
+#, c-format
+#~ msgid ""
+#~ "In this view, %s will automatically find songs similar to the one you're "
+#~ "playing. You can then start playing those songs, or save them as a playlist "
+#~ "for later."
+#~ msgstr ""
+#~ "V tem pogledu bo %s samodejno našel skladbe, podobne trenutno predvajani. "
+#~ "Nato lahko začnete predvajati te skladbe ali pa jih shranite kot seznam "
+#~ "predvajanja za pozneje."
+
+#, c-format
+#~ msgid "%s can't seem to find your music."
+#~ msgstr "Izgleda, da %s ne najde vaše glasbe."
+
+#~ msgid "Locate Media"
+#~ msgstr "Poišči predstavno vsebino"
+
+#~ msgid "Locate"
+#~ msgstr "Poišči"
